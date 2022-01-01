@@ -13,18 +13,17 @@ from tqdm import tqdm
 
 
 
-
-
-
-
 # import os
 # os.environ["CUDA_VISIBLE_DEVICES"]='2'
+
 
 
 class Trainer(object):
     def __init__(self,  weight_path, resume, gpu_id):
         init_seeds(0)
+        test_var = 3
         self.device = gpu.select_device(gpu_id)
+        test_var2 = 4
         self.start_epoch = 0
         self.best_mAP = 0.
         self.epochs = cfg.TRAIN["EPOCHS"]
