@@ -28,6 +28,7 @@ class Trainer(object):
         self.best_mAP = 0.
         self.var11 = 1.
         self.var21 = 3.
+        self.var_conflict1 = 12312
         self.epochs = cfg.TRAIN["EPOCHS"]
         self.weight_path = weight_path
         self.multi_scale_train = cfg.TRAIN["MULTI_SCALE_TRAIN"]
