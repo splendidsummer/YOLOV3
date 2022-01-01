@@ -27,6 +27,8 @@ class Trainer(object):
         self.device = gpu.select_device(gpu_id)
         self.start_epoch = 0
         self.best_mAP = 0.
+        self.var11 = 1.
+        self.var21 = 3.
         self.epochs = cfg.TRAIN["EPOCHS"]
         self.weight_path = weight_path
         self.multi_scale_train = cfg.TRAIN["MULTI_SCALE_TRAIN"]
